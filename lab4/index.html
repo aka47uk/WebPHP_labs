@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+    <h2>Cache test</h2>
+
+    <div class="cache-info">
+        <h3>Client cache by HTTP headers</h3>
+        <p>Generated img (blue square)</p>
+        <img src="image.php" alt="Cached Dynamic Image">
+    </div>
+    <br>
+
+    <div class="cache-info">
+        <h3>Server cache</h3>
+        <p>Generate report</p>
+        <a href="generate-report.php" target="_blank">Create/Open report</a>
+
+        <form method="POST" action="generate-report.php" style="margin-top: 10px;">
+        <input type="hidden" name="action" value="delete">
+        <button type="submit">Delete report</button>
+        </form>
+    </div>
+    <br>
+
+    <div class="cache-info">
+        <h3>Server cache to session</h3>
+        <p>Cache results in $_SESSION for 60 seconds</p>
+        <a href="session-cache.php" target="_blank">Show session cache</a>
+    </div>
+</html>
